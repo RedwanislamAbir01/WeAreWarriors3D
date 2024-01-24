@@ -1,0 +1,289 @@
+fileFormatVersion: 2
+guid: eac1e4c0a0c95e04e91c6b752a723af2
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Albero01_Mat
+    second: {fileID: 2100000, guid: 866146af7e1557e49a414ac1f92f9d4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Albero02_Mat1
+    second: {fileID: 2100000, guid: bb1bc9c23edf8bd4dbd360bb20cdd7c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bordo_Zolla_01_Mat
+    second: {fileID: 2100000, guid: 177e6e66070e85244bd6c044fd2c74bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Corda_Mat
+    second: {fileID: 2100000, guid: 9872b662649ffb346854df25a8d9ca47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Erba_01
+    second: {fileID: 2100000, guid: 7773f8006d5314c4b85e997057f31fcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Erba_01_TileMat
+    second: {fileID: 2100000, guid: 68953688b4ea63a4f8438b4d13b29bad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferro01_Mat
+    second: {fileID: 2100000, guid: bebfe878ac80cca458810bbf7a6e125a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferro02_Mat
+    second: {fileID: 2100000, guid: 3ceebac286e7c204aa771e623a8de4bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferro03_Mat
+    second: {fileID: 2100000, guid: 38706534edf956649a9ae8603b1343ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferro04_Mat
+    second: {fileID: 2100000, guid: 44b160b4c5aa7374993bd2c4d46eacc1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fire_01_Mat
+    second: {fileID: 2100000, guid: 50d1bfaa1fb9c4e48b1ec443a09bb7d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fire_02_Mat
+    second: {fileID: 2100000, guid: ac64b4dd791288948a32566f54810491, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gold_01_Mat
+    second: {fileID: 2100000, guid: 9068b4e83ae68e449a222dfde7ce7eba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Legno01_Mat
+    second: {fileID: 2100000, guid: 5eb975fd803e6684dac3d2b2ca92e749, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Legno02_Mat
+    second: {fileID: 2100000, guid: 056deb21f56e59443bb7cbb447fb4685, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Legno03_Mat
+    second: {fileID: 2100000, guid: 26ae01cc0992dca45815505911b69951, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Legno04_Mat
+    second: {fileID: 2100000, guid: 9734d73b930cf1b4fb84101f6953d7e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PG_Mat01
+    second: {fileID: 2100000, guid: 4e19350a20edf2246b8f3d853deda04f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PG_Mat02
+    second: {fileID: 2100000, guid: b68ea96fa96ba1d4386b0b1842087b21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PG_Mat03
+    second: {fileID: 2100000, guid: 2582e020aa016664b945b77d34d30f38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PG_Mat04
+    second: {fileID: 2100000, guid: 244357acd1bddf34e80ab93826c01dfe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PG_Mat07
+    second: {fileID: 2100000, guid: 5b9aed12414caf248b1920d5e544b2c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PG_Mat08
+    second: {fileID: 2100000, guid: edcbfe5535dc0a6458f35a8bf06f8a30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roccia_01_Mat
+    second: {fileID: 2100000, guid: 4ce982a3dc16a2541bb5de89f58d0c91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rosso_01_Mat
+    second: {fileID: 2100000, guid: 3d672bef898523945a1d117b87147e3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Smoke01_Mat
+    second: {fileID: 2100000, guid: 6fa6bb9f74a303349bc8b8ff1b2aa6db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Smoke02_Mat
+    second: {fileID: 2100000, guid: d9f9be45c2a9f0041ad6e0a014c7e078, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stendardi_Mat1
+    second: {fileID: 2100000, guid: 12830f7efe832ac44bc6118e8afcd258, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stendardi_Mat3
+    second: {fileID: 2100000, guid: 488340dc75eddc8408314bf979b7a972, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tegola_02_Mat
+    second: {fileID: 2100000, guid: c9365c44272115148b878d2cdedff9f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Terreno_TileMat_1
+    second: {fileID: 2100000, guid: efac0b4944b4e2d4b925136cc4c4de1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Terreno_TileMat_2
+    second: {fileID: 2100000, guid: 21e1180cd2f234748aa44ba59ff45d11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Terreno_TileMat_3
+    second: {fileID: 2100000, guid: 448cb036d6a197944883d87923b06283, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Terreno_TileMat_4
+    second: {fileID: 2100000, guid: 256e75c46b937bf4fb798316dbc9279a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Terreno_TileMat_5
+    second: {fileID: 2100000, guid: 5641886044c35144bb905108e3bc74cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 081145ef70cfe7a4db1757ca8ee207ea, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
