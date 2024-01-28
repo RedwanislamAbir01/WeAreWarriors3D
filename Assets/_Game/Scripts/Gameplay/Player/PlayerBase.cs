@@ -16,12 +16,6 @@ public class PlayerBase : MonoBehaviour
 
     private void HandlePlayerSpawned(GameObject playerPrefab)
     {
-        // Instantiate the player prefab
-        if (currentPlayerPrefab != null)
-        {
-            Destroy(currentPlayerPrefab);
-        }
-
-        currentPlayerPrefab = Instantiate(playerPrefab, transform.position, Quaternion.identity);
+       Instantiate(playerPrefab, transform.position, Quaternion.identity);
     }
 }
