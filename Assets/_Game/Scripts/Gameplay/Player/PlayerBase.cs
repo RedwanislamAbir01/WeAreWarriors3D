@@ -1,18 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerBase : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private GameObject currentPlayerPrefab;
+
+    private void OnEnable()
     {
-        
+        PlayerManager.OnPlayerSpawned += HandlePlayerSpawned;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        PlayerManager.OnPlayerSpawned -= HandlePlayerSpawned;
+    }
+
+    private void HandlePlayerSpawned(GameObject playerPrefab)
+    {
+        // Instantiate the player prefab
+        if (currentPlayerPrefab != null)
+        {
+            Destroy(currentPlayerPrefab);
+        }
+
+        currentPlayerPrefab = Instantiate(playerPrefab, transform.position, Quaternion.identity);
     }
 }

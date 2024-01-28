@@ -47,6 +47,9 @@ public class MeatGenerationUI : MonoBehaviour
             Debug.Log("Player Spawned!");
             meatCount -= playerManager.playerDataList[playerManager.CurrentPlayerIndex].meatRequirement;
             UpdateUI();
+            PlayerData currentPlayerData = playerManager.playerDataList[playerManager.CurrentPlayerIndex];
+            GameObject playerPrefab = currentPlayerData.playerPrefab;
+            PlayerManager.Instance.SpawnPlayerPrefab(playerPrefab);
         }
     }
 
