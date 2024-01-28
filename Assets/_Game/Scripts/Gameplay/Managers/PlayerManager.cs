@@ -1,18 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections.Generic;
+using TMPro;
+using _Tools.Helpers;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : Singleton<PlayerManager>   
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public List<PlayerData> playerDataList;
+    private int currentPlayerIndex = 0;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int CurrentPlayerIndex { get => currentPlayerIndex; set => currentPlayerIndex = value; }
 }
