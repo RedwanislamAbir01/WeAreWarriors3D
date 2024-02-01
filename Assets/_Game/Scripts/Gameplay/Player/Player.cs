@@ -11,10 +11,13 @@ public class Player : BaseCharacter
 
     protected BaseManager baseManager;
     protected NavMeshAgent agent;
+
+    private PlayerHealth playerHealth;
     private void Awake()
     {
         baseManager = BaseManager.Instance;
         agent = GetComponent<NavMeshAgent>();
+        playerHealth = GetComponent<PlayerHealth>();
     }
 
     private void Start()
@@ -34,7 +37,10 @@ public class Player : BaseCharacter
  
     public override void MoveTowardsTarget(Transform target)
     {
-        agent.SetDestination(target.position);
+        if (!playerHealth.IsDead())
+        {
+            agent.SetDestination(target.position);
+        }
     }
 
     public override void Attack(Transform target)

@@ -3,12 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHeath : MonoBehaviour , IDamageable
-{   
-
+public class EnemyBaseHealth : MonoBehaviour, IDamageable
+{
     [SerializeField] private int health;
-    [SerializeField] private SkinnedMeshRenderer enemyRenderer;
-    [SerializeField] private EnemyAnimation enemyAnimation;
+    [SerializeField] private MeshRenderer baseRenderer;
 
     private Material originalMaterial;
     private Coroutine flashCoroutine;
@@ -38,12 +36,11 @@ public class EnemyHeath : MonoBehaviour , IDamageable
     {
         OnDeath?.Invoke();
         isDead = true;
-        IsDead();  
-        enemyAnimation.PlayDeathAnim();
-        Destroy(gameObject, 2);
+        IsDead();
+
 
     }
-   
+
 
     public Transform GetTransform()
     {
@@ -51,20 +48,19 @@ public class EnemyHeath : MonoBehaviour , IDamageable
     }
     private IEnumerator FlashMaterial()
     {
-        if (enemyRenderer == null)
+        if (baseRenderer == null)
         {
             yield break;
         }
-        Color originalEmissionColor = enemyRenderer.material.GetColor("_EmissionColor");
+        Color originalEmissionColor = baseRenderer.material.GetColor("_EmissionColor");
         // Flash white
-        enemyRenderer.material.SetColor("_EmissionColor", Color.white);
-        yield return new WaitForSeconds(0.1f); 
+        baseRenderer.material.SetColor("_EmissionColor", Color.white);
+        yield return new WaitForSeconds(0.1f);
 
         // Reset back to original color
-        enemyRenderer.material.SetColor("_EmissionColor", originalEmissionColor);
+        baseRenderer.material.SetColor("_EmissionColor", originalEmissionColor);
         flashCoroutine = null;
     }
-
 
     public bool IsDead()
     {

@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+  
     // Damage amount of the weapon
     public int damageAmount;
 
+    IDamageable damageable;
     // Start is called before the first frame update
     void Start()
     {
+        damageable = GetComponentInParent<IDamageable>();
 
+        damageable.OnDeath += HideObj;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+   
+     void HideObj() => gameObject.SetActive(false);
 }

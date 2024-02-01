@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerBase : MonoBehaviour
 {
+    public float spawnRadius = 5f; // Adjust this radius as needed
     private GameObject currentPlayerPrefab;
 
     private void OnEnable()
@@ -16,6 +17,17 @@ public class PlayerBase : MonoBehaviour
 
     private void HandlePlayerSpawned(GameObject playerPrefab)
     {
-       Instantiate(playerPrefab, transform.position, Quaternion.identity);
+
+        Vector2 randomCircle = Random.insideUnitCircle.normalized * spawnRadius;
+        Vector3 spawnPosition = new Vector3(randomCircle.x, transform.position.y, randomCircle.y) + transform.position;
+        Instantiate(playerPrefab, spawnPosition, Quaternion.identity);
+    }
+
+
+    // Draw gizmos for visualization
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, spawnRadius);
     }
 }
