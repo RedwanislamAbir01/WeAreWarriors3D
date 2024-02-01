@@ -1,3 +1,4 @@
+using _Game.Managers;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -37,7 +38,7 @@ public class PlayerBaseHealth : MonoBehaviour, IDamageable
         OnDeath?.Invoke();
         isDead = true;
         IsDead();
-
+        GameManager.Instance.LevelFail();
 
     }
 
