@@ -40,7 +40,7 @@ public class EnemyHeath : MonoBehaviour , IDamageable
         isDead = true;
         IsDead();  
         enemyAnimation.PlayDeathAnim();
-        Destroy(gameObject, 2);
+        Destroy(gameObject);
 
     }
    
@@ -58,7 +58,7 @@ public class EnemyHeath : MonoBehaviour , IDamageable
         Color originalEmissionColor = enemyRenderer.material.GetColor("_EmissionColor");
         // Flash white
         enemyRenderer.material.SetColor("_EmissionColor", Color.white);
-        yield return new WaitForSeconds(0.1f); 
+        yield return new WaitForSeconds(0.05f); 
 
         // Reset back to original color
         enemyRenderer.material.SetColor("_EmissionColor", originalEmissionColor);

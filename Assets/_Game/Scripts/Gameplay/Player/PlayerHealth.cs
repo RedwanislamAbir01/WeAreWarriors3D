@@ -40,7 +40,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         isDead = true;
         IsDead();
         playerAnimation.PlayDeathAnim();
-        Debug.Log(gameObject.name + " has died!");
+        Destroy(gameObject);
 
     }
 
@@ -58,7 +58,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         Color originalEmissionColor = playerRenderer.material.GetColor("_EmissionColor");
         // Flash white
         playerRenderer.material.SetColor("_EmissionColor", Color.white);
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.05f);
 
         // Reset back to original color
         playerRenderer.material.SetColor("_EmissionColor", originalEmissionColor);
