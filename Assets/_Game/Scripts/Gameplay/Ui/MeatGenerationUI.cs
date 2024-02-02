@@ -1,4 +1,5 @@
 
+using _Game.Managers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,6 +17,7 @@ public class MeatGenerationUI : MonoBehaviour
     private int meatCount = 0;
 
     PlayerManager playerManager;
+
 
     private void Start()
     {
@@ -67,4 +69,5 @@ public class MeatGenerationUI : MonoBehaviour
             playerManager.CurrentPlayerIndex = index;
         }
     }
+
 }

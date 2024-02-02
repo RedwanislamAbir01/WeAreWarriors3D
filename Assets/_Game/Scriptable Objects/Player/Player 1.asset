@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Player 1
   m_EditorClassIdentifier: 
   playerName: Player 1
-  meatRequirement: 1
+  meatRequirement: 3
   health: 100
   damageAmmount: 10
   playerIcon: {fileID: 21300000, guid: 19fc09e12aad74e8dbde74e7956fdb4d, type: 3}

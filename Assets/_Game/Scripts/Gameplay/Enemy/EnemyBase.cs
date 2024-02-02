@@ -1,3 +1,4 @@
+using _Game.Managers;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,13 +27,28 @@ public class EnemyBase : MonoBehaviour
     [Header("Enemy Waves")]
     [SerializeField] private List<EnemyWave> _enemyWaves;
 
+
+    bool canSpawn = false;
+
+
     private void Start()
     {
+        GameManager.Instance.OnLevelStart += CanSpawn;
         StartCoroutine(SpawnEnemyWaves());
+
+    }
+    private void OnDestroy()
+    {
+        GameManager.Instance.OnLevelStart -= CanSpawn;
     }
 
     private IEnumerator SpawnEnemyWaves()
     {
+        while (!canSpawn)
+        {
+            yield return null;
+        }
+
         foreach (EnemyWave wave in _enemyWaves)
         {
             yield return new WaitForSeconds(wave.waveStartDelay);
@@ -57,5 +73,7 @@ public class EnemyBase : MonoBehaviour
             Instantiate(enemyPrefab, _startPoint.position, Quaternion.identity);
         }
     }
+
+    void CanSpawn() => canSpawn = true;
 }
 

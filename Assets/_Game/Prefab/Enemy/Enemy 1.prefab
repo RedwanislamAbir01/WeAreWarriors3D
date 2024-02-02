@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3591592449705695513}
   - component: {fileID: 2031998378248562356}
   - component: {fileID: 1722341091116044196}
+  - component: {fileID: 7446469792477692321}
   m_Layer: 6
   m_Name: Enemy 1
   m_TagString: Untagged
@@ -158,6 +159,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 7838837013166277940}
+--- !u!114 &7446469792477692321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396407793595636473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2855311b7690f4ea3bba7fc9c1135d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deathEffect: {fileID: 1221293952758510, guid: 21e3fa923d4f261409d83b8d0f6e81c7,
+    type: 3}
+  _bloodEffect: {fileID: 2555380073653861015, guid: 08f2a1b1f7e8225429f073da4293771b,
+    type: 3}
 --- !u!1 &1925255869900508916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,6 +1357,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4014699457044958873}
     m_Modifications:
+    - target: {fileID: 4339201611903983585, guid: 286b013d062322e43aa452e79f1d950a,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.1911857
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339201611903983585, guid: 286b013d062322e43aa452e79f1d950a,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.0000029294856
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339201611903983585, guid: 286b013d062322e43aa452e79f1d950a,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.3544592
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339201611903983585, guid: 286b013d062322e43aa452e79f1d950a,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.0000015486056
+      objectReference: {fileID: 0}
     - target: {fileID: 6899000420395051143, guid: 286b013d062322e43aa452e79f1d950a,
         type: 3}
       propertyPath: m_Name
