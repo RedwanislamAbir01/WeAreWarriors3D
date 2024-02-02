@@ -2134,6 +2134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 120
   baseRenderer: {fileID: 1909433213631204528}
+  _healthFill: {fileID: 1122082941}
 --- !u!54 &1897002012
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2413,6 +2414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   baseRenderer: {fileID: 2921329055103025599}
+  _healthFill: {fileID: 336375714}
 --- !u!65 &1999618540
 BoxCollider:
   m_ObjectHideFlags: 0
