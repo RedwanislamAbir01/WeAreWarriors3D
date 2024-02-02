@@ -12,8 +12,9 @@ public class MeatGenerationUI : MonoBehaviour
     [SerializeField] private Button spawnButton;
     [SerializeField] private Image playerIcon;
     [SerializeField] private TextMeshProUGUI requiredmeatCountText;
-    [SerializeField] private  float fillRate = 6f; // Variable for the fill rate
+    [SerializeField] private float fillRate = 3f;
 
+    private float currentFillRate;
     private int meatCount = 0;
 
     PlayerManager playerManager;
@@ -28,11 +29,19 @@ public class MeatGenerationUI : MonoBehaviour
         UnlockPlayerData(playerManager.CurrentPlayerIndex);
 
         UpdateUI();
+
+        currentFillRate = fillRate;
+
+        // Load time reduction from PlayerPrefs and adjust fill rate
+        float timeReduction = PlayerPrefs.GetFloat("CurrentTimeReduction", 0f);
+        currentFillRate -= timeReduction;
+
+
     }
 
     private void Update()
     {
-        meatFillImage.fillAmount += Time.deltaTime / fillRate;
+        meatFillImage.fillAmount += Time.deltaTime / currentFillRate;
 
         if (meatFillImage.fillAmount >= 1f)
         {

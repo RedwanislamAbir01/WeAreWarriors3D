@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3cf677241d442f43bbbe067361f6394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  maxHealth: 100
   playerRenderer: {fileID: 2697428981502697914}
   playerAnimation: {fileID: 5416414352677795381}
   _helathCanvas: {fileID: 8338527958513315329}

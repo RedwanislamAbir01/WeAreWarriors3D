@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class EnemyHeath : MonoBehaviour , IDamageable
 {
     [Header("Health Settings")]
-    [SerializeField] private int health;
+    [SerializeField] private int maxHealth = 100; // Maximum health value
+    private int currentHealth;
     [SerializeField] private SkinnedMeshRenderer enemyRenderer;
     [SerializeField] private EnemyAnimation enemyAnimation;
 
@@ -24,14 +25,15 @@ public class EnemyHeath : MonoBehaviour , IDamageable
     public event Action OnDeath;
     private void Start()
     {
+        currentHealth = maxHealth;
         HideHealthCanvas();
     }
-
+ 
     public virtual void TakeDamage(int amount)
     {
         UnhideHealthCanvas();
-        health -= amount;
-        if (health <= 0)
+        currentHealth -= amount;
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -52,6 +54,7 @@ public class EnemyHeath : MonoBehaviour , IDamageable
         isDead = true;
         IsDead();  
         enemyAnimation.PlayDeathAnim();
+        CurrencyManager.Instance.AddCoins(10);
         Destroy(gameObject);
 
     }
@@ -67,7 +70,7 @@ public class EnemyHeath : MonoBehaviour , IDamageable
         _healthFill.color = Color.white;
 
         float originalFillAmount = _healthFill.fillAmount;
-        float targetFillAmount = (float)health / 100f; // Assuming health ranges from 0 to 100
+        float targetFillAmount = (float)currentHealth / maxHealth;
         float fillSpeed = 0.5f; // Adjust speed as needed
 
         while (_healthFill.fillAmount > targetFillAmount)

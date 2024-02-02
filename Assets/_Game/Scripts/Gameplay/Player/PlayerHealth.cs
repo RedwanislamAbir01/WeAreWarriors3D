@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour, IDamageable
 {
     [Header("Health Settings")]
-    [SerializeField] private int health;
+    [SerializeField] private int maxHealth = 100; // Maximum health value
+    private int currentHealth;
     [SerializeField] private SkinnedMeshRenderer playerRenderer;
     [SerializeField] private PlayerAnimation playerAnimation;
 
@@ -23,13 +24,14 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public event Action OnDeath;
     private void Start()
     {
+        currentHealth = maxHealth;
         HideHealthCanvas();
     }
     public virtual void TakeDamage(int amount)
     {
         UnhideHealthCanvas();
-        health -= amount;
-        if (health <= 0)
+        currentHealth -= amount;
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -65,7 +67,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         _healthFill.color = Color.white;
 
         float originalFillAmount = _healthFill.fillAmount;
-        float targetFillAmount = (float)health / 100f; // Assuming health ranges from 0 to 100
+        float targetFillAmount = (float)currentHealth / maxHealth;
         float fillSpeed = 0.5f; // Adjust speed as needed
 
         while (_healthFill.fillAmount > targetFillAmount)
