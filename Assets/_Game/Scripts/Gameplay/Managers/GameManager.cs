@@ -28,6 +28,7 @@ namespace _Game.Managers
         public void LevelComplete()
         {
             OnLevelComplete?.Invoke();
+            if (UIManager.Instance != null) UIManager.Instance.LevelReloadTransition(_levelLoadDelay, SceneUtils.ReloadScene);
         }
 
         public void LevelFail()

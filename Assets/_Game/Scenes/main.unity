@@ -1945,7 +1945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dontDestroyOnLoad: 0
-  _levelLoadDelay: 3
+  _levelLoadDelay: 2
 --- !u!1 &1786233710
 GameObject:
   m_ObjectHideFlags: 0

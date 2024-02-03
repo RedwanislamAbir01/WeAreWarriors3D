@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 public class PlayerBaseHealthUpgrade : MonoBehaviour
 {
+    public static event System.Action<float> OnHealthUpgrade;
+
+
     [SerializeField] private TextMeshProUGUI priceText;
     [SerializeField] private TextMeshProUGUI healthIncreaseAmountText;
     [SerializeField] private Button upgradeButton;
@@ -46,6 +49,8 @@ public class PlayerBaseHealthUpgrade : MonoBehaviour
         priceText.text = currentPrice.ToString();
         healthIncreaseAmountText.text = currentHealthIncreaseAmount.ToString();
         upgradeButton.interactable = CurrencyManager.Instance.GetCoins() >= currentPrice;
+
+        OnHealthUpgrade?.Invoke(currentHealthIncreaseAmount);
     }
 
     public void UpgradeHealth()

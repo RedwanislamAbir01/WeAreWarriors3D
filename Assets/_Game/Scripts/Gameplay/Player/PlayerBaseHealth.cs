@@ -27,8 +27,11 @@ public class PlayerBaseHealth : MonoBehaviour, IDamageable
     public event Action OnDeath;
     private void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth = PlayerPrefs.GetInt("PlayerHealth", maxHealth);
         _healthText.text = currentHealth.ToString();
+
+        PlayerBaseHealthUpgrade.OnHealthUpgrade += HandleHealthUpgrade;
+
         _healthCanvas = GetComponentInChildren<Canvas>();   
     }
     public virtual void TakeDamage(int amount)
@@ -49,6 +52,14 @@ public class PlayerBaseHealth : MonoBehaviour, IDamageable
         }
         StartCoroutine(UpdateHealthFill());
     }
+
+    private void HandleHealthUpgrade(float healthIncreaseAmount)
+    {
+        currentHealth = Mathf.RoundToInt(healthIncreaseAmount);
+        _healthText.text = currentHealth.ToString();
+        PlayerPrefs.SetInt("PlayerHealth", currentHealth);
+    }
+
     private IEnumerator UpdateHealthFill()
     {
         // Change fill color to white while reducing
