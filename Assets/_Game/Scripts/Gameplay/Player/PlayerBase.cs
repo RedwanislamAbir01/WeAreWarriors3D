@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerBase : MonoBehaviour
 {
+    public Transform spawnPoint;
     public float spawnRadius = 5f; // Adjust this radius as needed
     private GameObject currentPlayerPrefab;
 
@@ -19,7 +20,7 @@ public class PlayerBase : MonoBehaviour
     {
 
         Vector2 randomCircle = Random.insideUnitCircle.normalized * spawnRadius;
-        Vector3 spawnPosition = new Vector3(randomCircle.x, transform.position.y, randomCircle.y) + transform.position;
+        Vector3 spawnPosition = new Vector3(randomCircle.x, transform.position.y, randomCircle.y) + spawnPoint.position;
         Instantiate(playerPrefab, spawnPosition, Quaternion.identity);
     }
 

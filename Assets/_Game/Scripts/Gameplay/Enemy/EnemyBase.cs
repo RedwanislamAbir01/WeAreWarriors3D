@@ -24,6 +24,9 @@ public class EnemyBase : MonoBehaviour
     [Header("Spawn Points")]
     [SerializeField] private Transform _startPoint;
 
+    [Header("Spawn Radius")]
+    [SerializeField] private float _spawnRadius = 5f;
+
     [Header("Enemy Waves")]
     [SerializeField] private List<EnemyWave> _enemyWaves;
 
@@ -70,10 +73,17 @@ public class EnemyBase : MonoBehaviour
     {
         foreach (GameObject enemyPrefab in group.enemyPrefabs)
         {
-            Instantiate(enemyPrefab, _startPoint.position, Quaternion.identity);
+            Vector3 randomOffset = Random.insideUnitSphere * _spawnRadius;
+            randomOffset.y = 0; // Ensure enemies spawn at the same height as the start point
+            Vector3 spawnPosition = _startPoint.position + randomOffset;
+            Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
         }
     }
-
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(_startPoint.position, _spawnRadius);
+    }
     void CanSpawn() => canSpawn = true;
 }
 
