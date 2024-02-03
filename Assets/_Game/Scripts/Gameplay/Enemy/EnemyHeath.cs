@@ -15,7 +15,9 @@ public class EnemyHeath : MonoBehaviour , IDamageable
     [Header("Health UI")]
     [SerializeField] private GameObject _helathCanvas;
     [SerializeField] private Image _healthFill;
-    
+
+    [SerializeField]
+    private int dropAmmoount = 10;
 
     private Material originalMaterial;
     private Coroutine flashCoroutine;
@@ -54,7 +56,7 @@ public class EnemyHeath : MonoBehaviour , IDamageable
         isDead = true;
         IsDead();  
         enemyAnimation.PlayDeathAnim();
-        CurrencyManager.Instance.AddCoins(10);
+        CurrencyManager.Instance.AddCoins(dropAmmoount);
         Destroy(gameObject);
 
     }

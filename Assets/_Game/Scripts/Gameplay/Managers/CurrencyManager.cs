@@ -28,7 +28,7 @@ public class CurrencyManager : Singleton<CurrencyManager>
         coins = PlayerPrefs.GetInt(CoinsKey);
         return coins;
     }
-    public void AddCoins(int amount)
+    public void AddCoins(int amount)    // for convenience coins will always be saved , won't wait for game to end 
     {
         coins += amount;
         SaveCoins();

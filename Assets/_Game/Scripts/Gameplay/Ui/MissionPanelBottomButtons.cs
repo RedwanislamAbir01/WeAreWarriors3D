@@ -44,19 +44,21 @@ namespace _Game.UI
         {
             _buttonClickOrder = 1;
             StartCoroutine(TransitionPanel(_missionPanel, _missionButton));
-
+            SoundManager.Instance.PlaySound(SoundManager.Instance._audioClipRefsSO.btnPress);
         }
 
         private void SkinButtonCallBack()
         {
             _buttonClickOrder = 0;
             StartCoroutine(TransitionPanel(_shopPanel, _shopButton));
+            SoundManager.Instance.PlaySound(SoundManager.Instance._audioClipRefsSO.btnPress);
         }
 
         private void WeaponButtonCallBack()
         {
             _buttonClickOrder = 2;
             StartCoroutine(TransitionPanel(_otherPanel, _otherButton));
+            SoundManager.Instance.PlaySound(SoundManager.Instance._audioClipRefsSO.btnPress);
 
         }
 

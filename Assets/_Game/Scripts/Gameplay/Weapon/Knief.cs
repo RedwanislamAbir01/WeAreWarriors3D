@@ -8,7 +8,8 @@ public class Knife : Weapon
         if (other.TryGetComponent(out IDamageable damageable))
         {
             // If it implements IDamageable, apply damage
-            damageable.TakeDamage(20);
+            damageable.TakeDamage(damageAmount);
+            SoundManager.Instance.PlaySound(SoundManager.Instance._audioClipRefsSO.hitSound);
         }
     }
 

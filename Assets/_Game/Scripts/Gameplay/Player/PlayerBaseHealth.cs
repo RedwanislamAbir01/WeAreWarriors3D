@@ -84,6 +84,7 @@ public class PlayerBaseHealth : MonoBehaviour, IDamageable
         isDead = true;
         IsDead();
         _healthCanvas.gameObject.SetActive(false);
+        SoundManager.Instance.PlaySound(SoundManager.Instance._audioClipRefsSO.baseDestroy);
         GameManager.Instance.LevelFail();
 
     }

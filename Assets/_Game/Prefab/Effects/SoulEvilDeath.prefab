@@ -9598,7 +9598,7 @@ GameObject:
   - component: {fileID: 198176560502280126}
   - component: {fileID: 199670023006196368}
   - component: {fileID: 82315226597912846}
-  - component: {fileID: 1428640791913916596}
+  - component: {fileID: 1667177655005664139}
   m_Layer: 0
   m_Name: SoulEvilDeath
   m_TagString: Untagged
@@ -14414,7 +14414,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 96bbf34d7aee725449bb8a5f1a46bfbb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 0.75
   Loop: 0
   Mute: 0
@@ -14498,7 +14498,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &1428640791913916596
+--- !u!114 &1667177655005664139
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14507,10 +14507,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1221293952758510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fd2e8874f60266498a388d7229a1bac, type: 3}
+  m_Script: {fileID: 11500000, guid: bfc84b0cc5712fb44828a7b702f96712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnlyDeactivate: 0
+  _lifeTime: 3
 --- !u!1 &1249967861382370
 GameObject:
   m_ObjectHideFlags: 0

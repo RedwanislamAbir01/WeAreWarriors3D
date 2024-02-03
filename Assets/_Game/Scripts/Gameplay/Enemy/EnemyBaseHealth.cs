@@ -36,6 +36,8 @@ public class EnemyBaseHealth : MonoBehaviour, IDamageable
     {
         currentHealth -= amount;
         _healthText.text = currentHealth.ToString();
+      
+ 
         if (currentHealth <= 0)
         {
             Die();
@@ -74,6 +76,7 @@ public class EnemyBaseHealth : MonoBehaviour, IDamageable
         isDead = true;
         IsDead();
         _healthCanvas.gameObject.SetActive(false);
+        SoundManager.Instance.PlaySound(SoundManager.Instance._audioClipRefsSO.baseDestroy);
         GameManager.Instance.LevelComplete();   
     }
 

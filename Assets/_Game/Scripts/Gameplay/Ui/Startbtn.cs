@@ -9,5 +9,6 @@ public class Startbtn : MonoBehaviour
     public void StartGame()
     {
         GameManager.Instance.LevelStart();
+        SoundManager.Instance.PlaySound(SoundManager.Instance._audioClipRefsSO.battleStart);
     }
 }

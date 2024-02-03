@@ -10,6 +10,7 @@ public class Armature : Weapon
         if (other.TryGetComponent(out IDamageable damageable))
         {
             damageable.TakeDamage(18);
+            SoundManager.Instance.PlaySound(SoundManager.Instance._audioClipRefsSO.hitSound);
         }
     }
 }

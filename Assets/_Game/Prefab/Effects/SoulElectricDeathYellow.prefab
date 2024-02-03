@@ -9773,7 +9773,7 @@ GameObject:
   - component: {fileID: 198832897130687344}
   - component: {fileID: 199895920213307954}
   - component: {fileID: 82535924348957184}
-  - component: {fileID: -143848765756781889}
+  - component: {fileID: -2909407512264644960}
   m_Layer: 0
   m_Name: SoulElectricDeathYellow
   m_TagString: Untagged
@@ -14591,7 +14591,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b1acecdf352627048b995eca86c0f8ec, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14675,7 +14675,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &-143848765756781889
+--- !u!114 &-2909407512264644960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14684,10 +14684,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1349552968121332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fd2e8874f60266498a388d7229a1bac, type: 3}
+  m_Script: {fileID: 11500000, guid: bfc84b0cc5712fb44828a7b702f96712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnlyDeactivate: 0
+  _lifeTime: 3
 --- !u!1 &1576231657427018
 GameObject:
   m_ObjectHideFlags: 0
