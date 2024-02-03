@@ -1945,7 +1945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dontDestroyOnLoad: 0
-  _levelLoadDelay: 1
+  _levelLoadDelay: 3
 --- !u!1 &1786233710
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,6 +2043,7 @@ GameObject:
   - component: {fileID: 1897002010}
   - component: {fileID: 1897002011}
   - component: {fileID: 1897002012}
+  - component: {fileID: 1897002013}
   m_Layer: 6
   m_Name: Enemy Base
   m_TagString: Untagged
@@ -2158,6 +2159,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1897002013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897002007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4d040cca7d3b44682ece0f47a611f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deathEffect: {fileID: 187952, guid: c05e92eaee7a00844867e5edc8e0dde1, type: 3}
 --- !u!1 &1899389366
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,6 +2373,7 @@ GameObject:
   - component: {fileID: 1999618539}
   - component: {fileID: 1999618541}
   - component: {fileID: 1999618540}
+  - component: {fileID: 1999618542}
   m_Layer: 3
   m_Name: Player Base
   m_TagString: Untagged
@@ -2460,6 +2475,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1999618542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999618536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4d040cca7d3b44682ece0f47a611f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deathEffect: {fileID: 187952, guid: c05e92eaee7a00844867e5edc8e0dde1, type: 3}
 --- !u!1 &2048337536
 GameObject:
   m_ObjectHideFlags: 0

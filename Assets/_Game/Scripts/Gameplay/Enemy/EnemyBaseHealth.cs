@@ -1,3 +1,4 @@
+using _Game.Managers;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ public class EnemyBaseHealth : MonoBehaviour, IDamageable
 
     private Material originalMaterial;
     private Coroutine flashCoroutine;
+    private Canvas _healthCanvas;
 
     bool isDead = false;
 
@@ -28,6 +30,7 @@ public class EnemyBaseHealth : MonoBehaviour, IDamageable
     {
         currentHealth = maxHealth;
         _healthText.text = currentHealth.ToString();
+        _healthCanvas = GetComponentInChildren<Canvas>();
     }
     public virtual void TakeDamage(int amount)
     {
@@ -70,8 +73,8 @@ public class EnemyBaseHealth : MonoBehaviour, IDamageable
         OnDeath?.Invoke();
         isDead = true;
         IsDead();
-
-
+        _healthCanvas.gameObject.SetActive(false);
+        GameManager.Instance.LevelComplete();   
     }
 
 

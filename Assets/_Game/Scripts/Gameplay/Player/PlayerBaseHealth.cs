@@ -17,8 +17,10 @@ public class PlayerBaseHealth : MonoBehaviour, IDamageable
     [SerializeField]
     private TextMeshProUGUI _healthText;
 
+    private Canvas _healthCanvas;
     private Material originalMaterial;
     private Coroutine flashCoroutine;
+
 
     bool isDead = false;
 
@@ -27,6 +29,7 @@ public class PlayerBaseHealth : MonoBehaviour, IDamageable
     {
         currentHealth = maxHealth;
         _healthText.text = currentHealth.ToString();
+        _healthCanvas = GetComponentInChildren<Canvas>();   
     }
     public virtual void TakeDamage(int amount)
     {
@@ -69,6 +72,7 @@ public class PlayerBaseHealth : MonoBehaviour, IDamageable
         OnDeath?.Invoke();
         isDead = true;
         IsDead();
+        _healthCanvas.gameObject.SetActive(false);
         GameManager.Instance.LevelFail();
 
     }
