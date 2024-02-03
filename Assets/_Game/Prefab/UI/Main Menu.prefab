@@ -1761,7 +1761,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6454162903502641856}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1430644443502862382}
+        m_TargetAssemblyTypeName: PlayerBaseHealthUpgrade, Assembly-CSharp
+        m_MethodName: UpgradeHealth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5085759914396480331
 GameObject:
   m_ObjectHideFlags: 0
@@ -3364,6 +3376,7 @@ GameObject:
   - component: {fileID: 7924163138239471619}
   - component: {fileID: 5684798150492230324}
   - component: {fileID: 4933681278642931278}
+  - component: {fileID: 1430644443502862382}
   m_Layer: 5
   m_Name: Base HEALTH
   m_TagString: Untagged
@@ -3432,6 +3445,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1430644443502862382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9019264108544990328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c819c7f0e0cb1404ab1beff17d9d1c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priceText: {fileID: 6819730848254607329}
+  healthIncreaseAmountText: {fileID: 1552880542281732442}
+  upgradeButton: {fileID: 8015313791837703935}
 --- !u!1 &9024755300423469358
 GameObject:
   m_ObjectHideFlags: 0

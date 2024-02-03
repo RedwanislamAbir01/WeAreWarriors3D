@@ -2,6 +2,7 @@ using _Game.Managers;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +14,8 @@ public class PlayerBaseHealth : MonoBehaviour, IDamageable
 
     [Header("Health UI")]
     [SerializeField] private Image _healthFill;
-
+    [SerializeField]
+    private TextMeshProUGUI _healthText;
 
     private Material originalMaterial;
     private Coroutine flashCoroutine;
@@ -24,10 +26,12 @@ public class PlayerBaseHealth : MonoBehaviour, IDamageable
     private void Start()
     {
         currentHealth = maxHealth;
+        _healthText.text = currentHealth.ToString();
     }
     public virtual void TakeDamage(int amount)
     {
         currentHealth -= amount;
+        _healthText.text = currentHealth.ToString();
         if (currentHealth <= 0)
         {
             Die();

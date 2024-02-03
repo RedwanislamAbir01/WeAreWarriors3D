@@ -8,8 +8,7 @@ public class FoodProdutionUpgrade : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timeReduceAmountText;
     [SerializeField] private Button upgradeButton;
 
-    public delegate void FillRateUpgrade(float newTimeReduction);
-    public static event FillRateUpgrade OnFillRateUpgrade;
+
 
     private int currentPrice = 10; // Initial price
     private float currentTimeReduction = 0.2f; // Initial time reduction
@@ -54,8 +53,7 @@ public class FoodProdutionUpgrade : MonoBehaviour
             SaveCurrentTimeReduction(); // Save the new time reduction
             SaveData();
             UpdateUI();
-            if (OnFillRateUpgrade != null)
-                OnFillRateUpgrade(currentTimeReduction); // Raise event with the new time reduction
+    
         }
     }
     private void SaveData()

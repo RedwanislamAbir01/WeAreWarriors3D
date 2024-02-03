@@ -2130,6 +2130,7 @@ MonoBehaviour:
   maxHealth: 500
   baseRenderer: {fileID: 1909433213631204528}
   _healthFill: {fileID: 1122082941}
+  _healthText: {fileID: 771777091}
 --- !u!54 &1897002012
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2410,6 +2411,7 @@ MonoBehaviour:
   maxHealth: 2
   baseRenderer: {fileID: 2921329055103025599}
   _healthFill: {fileID: 336375714}
+  _healthText: {fileID: 502195558}
 --- !u!65 &1999618540
 BoxCollider:
   m_ObjectHideFlags: 0
