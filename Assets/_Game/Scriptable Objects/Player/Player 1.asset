@@ -16,6 +16,6 @@ MonoBehaviour:
   meatRequirement: 3
   health: 100
   damageAmmount: 10
-  playerIcon: {fileID: 21300000, guid: 19fc09e12aad74e8dbde74e7956fdb4d, type: 3}
+  playerIcon: {fileID: 21300000, guid: d650156b5263f3e4a8a2a2cc3614a68d, type: 3}
   playerPrefab: {fileID: 2255599434992862171, guid: 61d8e9777f37e8248806d9bfe2593519,
     type: 3}

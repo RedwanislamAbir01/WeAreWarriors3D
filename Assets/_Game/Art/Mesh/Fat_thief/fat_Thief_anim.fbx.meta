@@ -1,0 +1,618 @@
+fileFormatVersion: 2
+guid: a6bacd2919d913f48bad99e699b7f0fb
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: -1906948128511837235
+    second: wlk
+  - first:
+      74: -5252816984213320552
+    second: idle
+  - first:
+      74: 7865403407320233019
+    second: surr
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: "Avatar Rig Configuration mis-match. Inbetween bone rotation
+      in configuration does not match rotation in animation file:\n\t'FatTheif_rig:joint_ball_L'
+      : rotation error = 12.000014 deg\n"
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'wlk' has import animation warnings that might
+      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
+      retargeting quality.\n\t'FatTheif_rig:joint_chest' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'FatTheif_rig:joint_ball_L'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'FatTheif_rig:joint_ball_R'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'idle' has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'FatTheif_rig:joint_chest'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'surr' has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'FatTheif_rig:joint_chest'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: wlk
+      takeName: wlk
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle
+      takeName: idle
+      internalID: 0
+      firstFrame: 31
+      lastFrame: 61
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 31
+    - serializedVersion: 16
+      name: surr
+      takeName: surr
+      internalID: 0
+      firstFrame: 62
+      lastFrame: 92
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.55
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: FatTheif_rig:joint_root
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_hip_L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_hip_R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_knee_L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_knee_R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_ankle_L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_ankle_R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_belly
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_neck
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_shoulder_L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_shoulder_R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_hand_L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_hand_R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_elbow_L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_elbow_R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_wrist_L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_wrist_R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_toe_L
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_toe_R
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_head
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_jaw
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_thumb_L
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_thumbTip_L
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_finger_L
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_fingerTip_L
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_thumb_R
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_thumbTip_R
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_finger_R
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FatTheif_rig:joint_fingerTip_R
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: fat_Thief_anim(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FatTheif_rig:Offset_Joints
+      parentName: fat_Thief_anim(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.5, y: 0.5, z: 0.5}
+    - name: FatTheif_rig:joint_root
+      parentName: FatTheif_rig:Offset_Joints
+      position: {x: -9.77014e-13, y: 1.514615, z: -0.09643811}
+      rotation: {x: 0.483653, y: -0.5158292, z: -0.483653, w: 0.51582927}
+      scale: {x: 1, y: 0.99999994, z: 0.9999997}
+    - name: FatTheif_rig:joint_belly
+      parentName: FatTheif_rig:joint_root
+      position: {x: -0.3029859, y: 7.266488e-10, z: 5.7245875e-17}
+      rotation: {x: 0.000000029802322, y: -0.000000029802322, z: -0.01473403, w: 0.9998915}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000002}
+    - name: FatTheif_rig:joint_chest
+      parentName: FatTheif_rig:joint_belly
+      position: {x: -0.3351531, y: -6.1134322e-12, z: -8.748982e-11}
+      rotation: {x: -0.025598139, y: 0.0028073126, z: 0.0742435, w: 0.9969076}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: FatTheif_rig:joint_neck
+      parentName: FatTheif_rig:joint_chest
+      position: {x: -0.3192463, y: -0.000000009743321, z: -5.2203486e-10}
+      rotation: {x: 0.03173031, y: -0.0057086865, z: -0.005558169, w: 0.9994647}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000005}
+    - name: FatTheif_rig:joint_head
+      parentName: FatTheif_rig:joint_neck
+      position: {x: -1.3469591, y: 4.401373e-15, z: -4.1903986e-15}
+      rotation: {x: -0.006350884, y: 0.0013405667, z: 0.035570215, w: 0.99934614}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: FatTheif_rig:joint_jaw
+      parentName: FatTheif_rig:joint_neck
+      position: {x: -0.115096964, y: 0.24997784, z: -0.0029407847}
+      rotation: {x: -0.6634733, y: 0.74817187, z: -0.0040453575, w: -0.0050760857}
+      scale: {x: 0.9999998, y: 0.9999997, z: 0.9999996}
+    - name: FatTheif_rig:joint_jawTip
+      parentName: FatTheif_rig:joint_jaw
+      position: {x: -0.5881866, y: -6.7168495e-16, z: 4.6101653e-16}
+      rotation: {x: 0.018590985, y: -0.70686245, z: 0.018590895, w: 0.7068623}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: FatTheif_rig:joint_shoulder_L
+      parentName: FatTheif_rig:joint_chest
+      position: {x: -0.16032897, y: 0.02920289, z: 0.24190706}
+      rotation: {x: -0.38312522, y: 0.57225174, z: 0.51875746, w: 0.5065904}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+    - name: FatTheif_rig:joint_hand_L
+      parentName: FatTheif_rig:joint_shoulder_L
+      position: {x: -0.15003216, y: -0.000000021792975, z: 0.000000023466978}
+      rotation: {x: -0.003086, y: -0.026608402, z: -0.091675036, w: 0.9954286}
+      scale: {x: 1.0000002, y: 1, z: 0.99999994}
+    - name: FatTheif_rig:joint_elbow_L
+      parentName: FatTheif_rig:joint_hand_L
+      position: {x: -0.5764455, y: 2.8791736e-10, z: -0.000000020753012}
+      rotation: {x: -0.0004086086, y: 0.03710579, z: -0.03460656, w: 0.9987118}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.9999998}
+    - name: FatTheif_rig:joint_wrist_L
+      parentName: FatTheif_rig:joint_elbow_L
+      position: {x: -0.5226696, y: -0.000000011071859, z: 0.00000004874898}
+      rotation: {x: 0.0044593373, y: -0.0568496, z: -0.032573264, w: 0.9978413}
+      scale: {x: 1.0000002, y: 1, z: 1.0000004}
+    - name: FatTheif_rig:joint_finger_L
+      parentName: FatTheif_rig:joint_wrist_L
+      position: {x: -0.15701902, y: 2.9309892e-15, z: -3.068379e-15}
+      rotation: {x: -0.0013062855, y: 0.052168775, z: 0.08565591, w: 0.99495715}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: FatTheif_rig:joint_fingerTip_L
+      parentName: FatTheif_rig:joint_finger_L
+      position: {x: -0.21057281, y: 4.4123256e-16, z: 1.1967149e-16}
+      rotation: {x: -0.00016676472, y: -0.0054777116, z: -0.030416304, w: 0.9995223}
+      scale: {x: 1.0000005, y: 0.99999994, z: 1.0000005}
+    - name: FatTheif_rig:joint_thumb_L
+      parentName: FatTheif_rig:joint_wrist_L
+      position: {x: -0.17872593, y: -0.009231623, z: 0.10418647}
+      rotation: {x: -0.02312266, y: 0.3575751, z: 0.05977912, w: 0.9316823}
+      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+    - name: FatTheif_rig:joint_thumbTip_L
+      parentName: FatTheif_rig:joint_thumb_L
+      position: {x: -0.11344173, y: -1.8957668e-16, z: -1.22143326e-17}
+      rotation: {x: -0.002686694, y: -0.118156254, z: -0.022572955, w: 0.99273485}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000004}
+    - name: FatTheif_rig:joint_shoulder_R
+      parentName: FatTheif_rig:joint_chest
+      position: {x: -0.15578973, y: 0.053664938, z: -0.24068178}
+      rotation: {x: -0.40337935, y: 0.60251826, z: -0.49270725, w: -0.4811408}
+      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000007}
+    - name: FatTheif_rig:joint_hand_R
+      parentName: FatTheif_rig:joint_shoulder_R
+      position: {x: -0.15003249, y: 0.000000029649687, z: -0.000000008482017}
+      rotation: {x: 0.0030862833, y: 0.026608374, z: -0.09168514, w: 0.9954277}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.9999998}
+    - name: FatTheif_rig:joint_elbow_R
+      parentName: FatTheif_rig:joint_hand_R
+      position: {x: -0.5764446, y: -1.8126456e-10, z: -0.0000000107163265}
+      rotation: {x: 0.00040875765, y: -0.03710583, z: -0.03460913, w: 0.99871176}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000005}
+    - name: FatTheif_rig:joint_wrist_R
+      parentName: FatTheif_rig:joint_elbow_R
+      position: {x: -0.52267194, y: 0.000000011396672, z: 0.000000054976816}
+      rotation: {x: -0.004459686, y: 0.056850288, z: -0.032572903, w: 0.99784124}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: FatTheif_rig:joint_finger_R
+      parentName: FatTheif_rig:joint_wrist_R
+      position: {x: -0.15701538, y: -4.8849814e-16, z: -9.159341e-17}
+      rotation: {x: 0.0013063996, y: -0.052168738, z: 0.08565758, w: 0.9949571}
+      scale: {x: 0.9999997, y: 0.99999994, z: 0.99999994}
+    - name: FatTheif_rig:joint_fingerTip_R
+      parentName: FatTheif_rig:joint_finger_R
+      position: {x: -0.21057376, y: 1.6137575e-16, z: 5.3573084e-17}
+      rotation: {x: 0.0054770154, y: -0.0001666888, z: 0.9995223, w: 0.030416222}
+      scale: {x: 1.0000001, y: 1.0000002, z: 0.99999994}
+    - name: FatTheif_rig:joint_thumb_R
+      parentName: FatTheif_rig:joint_wrist_R
+      position: {x: -0.17872722, y: -0.009230506, z: -0.10418679}
+      rotation: {x: 0.023125287, y: -0.35757622, z: 0.059784994, w: 0.93168145}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: FatTheif_rig:joint_thumbTip_R
+      parentName: FatTheif_rig:joint_thumb_R
+      position: {x: -0.11343734, y: -3.727729e-16, z: -5.7538214e-17}
+      rotation: {x: 0.118160374, y: -0.0026883853, z: 0.992734, w: 0.022585852}
+      scale: {x: 0.99999994, y: 1.0000006, z: 1.0000001}
+    - name: FatTheif_rig:joint_hip_L
+      parentName: FatTheif_rig:joint_root
+      position: {x: 0.21126388, y: 0.0019000357, z: 0.26112294}
+      rotation: {x: 0.016842945, y: 0.99985814, z: 0.0000010877847, w: 0.000000029802319}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000005}
+    - name: FatTheif_rig:joint_knee_L
+      parentName: FatTheif_rig:joint_hip_L
+      position: {x: -0.4806298, y: -1.4803088e-14, z: 0.0000000066663026}
+      rotation: {x: -0.99874514, y: -0.050081793, z: -0.00000018618293, w: -0.0000010313349}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: FatTheif_rig:joint_ankle_L
+      parentName: FatTheif_rig:joint_knee_L
+      position: {x: -0.5515403, y: -1.5045402e-16, z: -4.8962253e-17}
+      rotation: {x: 0.9234714, y: 0.38366714, z: 0.0000007891677, w: -0.0000019425718}
+      scale: {x: 1.0000002, y: 1.0000006, z: 1.0000004}
+    - name: FatTheif_rig:joint_ball_L
+      parentName: FatTheif_rig:joint_ankle_L
+      position: {x: -0.21488187, y: -1.518438e-16, z: 7.9020684e-10}
+      rotation: {x: -0.000000025695389, y: 0.000000019829658, z: -0.30148146, w: 0.9534721}
+      scale: {x: 1.0000004, y: 0.99999994, z: 1.0000001}
+    - name: FatTheif_rig:joint_toe_L
+      parentName: FatTheif_rig:joint_ball_L
+      position: {x: -0.3087741, y: 4.5796706e-17, z: 3.1133443e-10}
+      rotation: {x: -0.084756605, y: -0.7020087, z: -0.08475656, w: 0.70200884}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: FatTheif_rig:joint_hip_R
+      parentName: FatTheif_rig:joint_root
+      position: {x: 0.2112658, y: 0.0018999152, z: -0.26112294}
+      rotation: {x: 0.016842904, y: 0.9998582, z: -0, w: 0}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: FatTheif_rig:joint_knee_R
+      parentName: FatTheif_rig:joint_hip_R
+      position: {x: -0.48062977, y: 9.49323e-16, z: -1.243495e-16}
+      rotation: {x: -0.99874514, y: -0.05008192, z: 0.00000003230788, w: -0.00000014848851}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+    - name: FatTheif_rig:joint_ankle_R
+      parentName: FatTheif_rig:joint_knee_R
+      position: {x: -0.55153835, y: -2.279192e-15, z: 0.000000007814471}
+      rotation: {x: 0.9234713, y: 0.38366762, z: 0.00000017045356, w: 0.00000031710263}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: FatTheif_rig:joint_ball_R
+      parentName: FatTheif_rig:joint_ankle_R
+      position: {x: -0.21488191, y: 7.092199e-17, z: -3.9703353e-17}
+      rotation: {x: 0.000000001931326, y: 0.00000031564264, z: -0.30148056, w: 0.9534724}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: FatTheif_rig:joint_toe_R
+      parentName: FatTheif_rig:joint_ball_R
+      position: {x: -0.30877388, y: 1.3912921e-16, z: -1.8021983e-17}
+      rotation: {x: 0.702009, y: -0.08475692, z: 0.70200837, w: 0.08475698}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000001}
+    - name: FatTheif_GEO
+      parentName: fat_Thief_anim(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.55
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
