@@ -22,14 +22,21 @@ public class Player : BaseCharacter
 
     private void Start()
     {
-      agent.speed = movememntSpeed; 
+     Init();    
     }
-
+    protected virtual void Init()
+    {
+        agent.speed = movememntSpeed;
+    }
     private void Update()
     {
         DetectTarget();
+        CharacterActivity();
     }
+    protected virtual void CharacterActivity()
+    {
 
+    }
     protected virtual void DetectTarget()
     {
 

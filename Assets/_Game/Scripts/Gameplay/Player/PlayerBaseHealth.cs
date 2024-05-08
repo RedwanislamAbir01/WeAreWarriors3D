@@ -1,4 +1,5 @@
 using _Game.Managers;
+using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,6 +9,9 @@ using UnityEngine.UI;
 
 public class PlayerBaseHealth : MonoBehaviour, IDamageable
 {
+    [SerializeField] private TextMeshProUGUI _healthReduceFeedBackPrefab;
+    [SerializeField] private Transform _healthReduceFeedBackTr;
+
     [SerializeField] private int maxHealth = 500; // Maximum health value
     private int currentHealth;
     [SerializeField] private MeshRenderer baseRenderer;
@@ -37,6 +41,7 @@ public class PlayerBaseHealth : MonoBehaviour, IDamageable
     public virtual void TakeDamage(int amount)
     {
         currentHealth -= amount;
+        TextPop();
         _healthText.text = currentHealth.ToString();
         if (currentHealth <= 0)
         {
@@ -109,6 +114,14 @@ public class PlayerBaseHealth : MonoBehaviour, IDamageable
         // Reset back to original color
         baseRenderer.material.SetColor("_EmissionColor", originalEmissionColor);
         flashCoroutine = null;
+    }
+   void TextPop()
+    {
+        TextMeshProUGUI healthReduceFeedBack = Instantiate(_healthReduceFeedBackPrefab, _healthReduceFeedBackTr);
+        healthReduceFeedBack.text = "-10";
+        healthReduceFeedBack.rectTransform
+            .DOAnchorPos(new Vector3(UnityEngine.Random.Range(-.25f, .25f), healthReduceFeedBack.rectTransform.localPosition.y + .5f, 0), .5f)
+            .OnComplete(() => { Destroy(healthReduceFeedBack.gameObject); });
     }
 
     public bool IsDead()
